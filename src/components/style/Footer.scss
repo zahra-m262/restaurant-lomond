@@ -1,0 +1,151 @@
+@import '../../main.scss';
+
+.footer{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media (max-width:426px){
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &-header{
+        display: flex;
+        align-items: center;
+
+        .logo{
+            font-size: 3rem;
+            color: $color-primary;
+            @include flexLayout;
+            width: 4rem;
+            height: 4rem;
+            border: 3px solid #d3ab55;
+            border-radius: 50%;
+
+            @media (max-width:1024px){
+                font-size: 2rem;
+                height: 3rem;
+                width: 3rem;
+            }
+
+            @media (max-width:376px){
+                font-size: 1.75rem;
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+        }
+
+        .main-name{
+            @include textStyles;
+            color: $color-secondary;
+            font-size: 3rem;
+            font-family: "nunito";
+
+            @media (max-width:1024px){
+                font-size: 1.75rem;
+            }
+
+            @media (max-width:769px){
+                font-size: 1.5rem;
+            }
+
+            @media (max-width:376px){
+                font-size: 1.25rem;
+            }
+
+            @media (max-width:321px){
+                font-size: 1.10rem;
+            }
+        }
+
+        .sub-name{
+            font-family: 'josefin';
+            @include textStyles;
+            font-size: 1rem;
+            color: $color-secondary;
+            text-align: center;
+            margin-top: .75rem;
+
+            @media (max-width:1024px){
+                font-size: .75rem;
+            }
+        }
+    }
+
+    .grouping{
+        @include flexLayout;
+        flex-direction: column;
+
+        @media (max-width:426px){
+        margin-top: 4rem;
+        }
+
+           .social-media{
+            display: flex;
+            justify-content: space-between;
+            width: 25rem;
+            margin-bottom: 2rem;
+
+            &-item{
+                list-style: none;
+
+            }
+
+            &-link{
+                font-size: 3.5rem;
+                text-decoration: none;
+                color: $color-secondary;
+                transition: color .7s;
+
+                &:hover{
+                    color: $color-primary;
+                }
+
+
+                @media (max-width:1024px){
+                    font-size: 2rem;
+                }
+
+                @media (max-width:769px){
+                    font-size: 1.75rem;
+                }
+
+                @media (max-width:376px){
+                    font-size: 1.5rem;
+                }
+            }
+
+            @media (max-width:1024px){
+                width: 20rem;
+                margin-bottom: 1.25rem;
+            }
+
+            @media (max-width:769px){
+                width: 15rem;
+                margin-bottom: 1rem;
+            }
+           }
+        
+    }
+
+    &-copyright-paragraph{
+        font-family: 'josefin';
+        font-size: 1.25rem;
+        color: $color-secondary;
+
+        @media (max-width:1024px){
+            font-size: 1.10rem;
+        }
+
+        @media (max-width:769px){
+            font-size: 1rem;
+        }
+
+        @media (max-width:376px){
+            font-size: .90rem;
+        }
+    }
+}

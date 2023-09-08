@@ -1,0 +1,263 @@
+@import '../../main.scss';
+
+
+
+.menu-container{
+    width: 100vw ;
+    height: 100vh;
+
+background: linear-gradient(rgba(0,0,0, 0.9),rgba(0,0,0 ,0.8)), url('./images/img2.jpeg');
+}
+.menu-header{
+    margin: 0;
+    padding: 1.25rem;
+    background-color: #ad0106;
+    color: #fff;
+    font-family: 'dancing';
+    font-size: 2.75rem;
+    line-height: 3rem;
+    text-align: center;
+
+    .cart-logo{
+        
+        @media (max-width:769px){
+            font-size: 2.5rem;
+        }   
+        
+        @media (max-width:376px){
+            font-size: 2rem;
+        }
+
+    }
+
+    @media (max-width:769px){
+        font-size: 2.5rem;
+    }
+
+    @media (max-width:376px){
+        font-size: 2rem;
+    }
+}
+
+.order-list-header{
+    font-family: 'dancing';
+    font-size: 2.31rem;
+    line-height: 3rem;
+    margin: 1.31rem 0;
+
+    @media (max-width:426px){
+        text-align: center;
+    }
+
+}
+
+.main{
+    display: flex;
+    margin: 1.31rem auto 0;
+    max-width: 100%;
+    max-height: calc(100vh - 7.87rem);
+    flex-direction: row;
+
+    @media (max-width:769px){
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    
+
+}
+
+#menu-section-item{
+    margin: 1.31rem;
+    padding: 0 1.31rem .6rem;
+    width: calc(60% - .125rem);
+    background-color: rgba(255, 255, 255, .6);
+    border: 1px solid #ddd;
+    border-radius: .6rem;
+    overflow-y: auto;
+
+    @media (max-width:769px){
+     width: 90%;
+    }
+
+    @media (max-width:376px){
+        margin-top: 2rem;
+
+    }
+
+    @media (max-width:321px){
+        margin-top: 2rem;
+
+    }
+
+}
+
+#menu-section{
+    margin: 1.31rem;
+    padding: 0 1.31rem .6rem;
+    width: calc(40% - .125rem);
+    background-color: rgba(255, 255, 255, .6);
+    border: 1px solid #ddd;
+    border-radius: .6rem;
+    overflow-y: auto;
+
+    @media (max-width:769px){
+        width: 90%;
+        height: 50rem;
+    }
+
+    @media (max-width:376px){
+        margin-top: 2rem;
+
+    }
+
+    @media (max-width:321px){
+        margin-top: 2rem;
+
+    }
+}
+
+.order-list{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+}
+
+table{
+    margin-bottom: 1.31rem;
+    width: 100%;
+    border: none;
+    font-family: 'josefin';
+}
+
+table, th, td{
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: .25rem .375rem;
+    text-align: left;
+
+}
+
+th{
+    background-color: #ffbe76;
+    color: #fff;
+}
+
+
+
+// .menu-item{
+
+// }
+.cart-id{
+    @media (max-width:376px){
+        font-size: .80rem;
+        font-weight: 700;
+
+    }
+
+    @media (max-width:321px){
+        font-size: .70rem;
+        font-weight: 400;
+
+    }
+}
+
+
+.cart-title{
+    // font-size: .80rem;
+
+    @media (max-width:426px){
+        font-size: .90rem;
+        font-weight: 100;
+        font-family: 'nunito';
+    }
+
+    @media (max-width:321px){
+        font-size: .70rem;
+        font-weight: 700;
+
+    }
+}
+
+.cart-img{
+    width: 10rem;
+    border-radius: .5rem;
+
+
+    @media (max-width:426px){
+        width: 5rem;
+    }
+
+}
+
+.cart-price{
+    @media (max-width:321px){
+        font-size: .70rem;
+        font-weight: 700;
+
+    }   
+}
+
+.add-btn{
+    padding: .375em .625rem;
+    background-color: #6ab04c;
+    color: #fff;
+    border: none;
+    border-radius: .1875rem;
+    cursor: pointer;
+
+    @media (max-width:321px){
+        font-size: .75rem;
+        padding: .25rem;
+
+    }
+}
+
+
+/* Cart Summary*/
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(187, 187, 187);
+    padding-top: 2rem;
+  }
+  
+  .clear-cart {
+    width: 3rem;
+    max-width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    font-weight: 400;
+    letter-spacing: 1.15px;
+    border: 0.5px solid rgb(177, 177, 177);
+    background: none;
+    outline: none;
+    color: gray;
+    cursor: pointer;
+    margin-bottom: 1rem;
+
+    &:hover{
+        color: black;
+    border: 0.5px solid black;
+
+    }
+  }
+  
+  .cart-checkout {
+    width: 3rem;
+    max-width: 100%;
+  }
+  
+  .subtotal {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .amount {
+    font-weight: 700;
+  }

@@ -1,0 +1,83 @@
+{
+    "foods":[
+        {
+            "id":"01",
+            "title":"Special chicken sandwich (mixed)",
+            "price":120,
+            "pic":"img-1.jpeg"
+        },
+        {
+            "id":"02",
+            "title":"Special pancakes",
+            "price":90 ,
+            "pic":"img-2.jpeg"
+        },
+        {
+            "id":"03",
+            "title":"Pizza steak",
+            "price":260,
+            "pic":"img-3.jpeg"
+        },
+        {
+            "id":"04",
+            "title":"Grilled chicken steak",
+            "price":160,
+            "pic":"img-4.jpeg"
+        },
+        {
+            "id":"05",
+            "title":"Diet toast",
+            "price":85 ,
+            "pic":"img-5.jpeg"
+        },
+        {
+            "id":"06",
+            "title":"Grilled meat steak",
+            "price":260,
+            "pic":"img-6.jpeg"
+        },
+        {
+            "id":"07",
+            "title":"Caesar salad special",
+            "price":115,
+            "pic":"img-7.jpeg"
+        },
+        {
+            "id":"08",
+            "title":"Chef's special steak",
+            "price":325,
+            "pic":"img-8.jpeg"
+        },
+        {
+            "id":"09",
+            "title":"Smoothie with fruit",
+            "price":145,
+            "pic":"img-9.jpeg"
+        },
+        {
+            "id":"10",
+            "title":"Toast with avocado",
+            "price":168,
+            "pic":"img-10.jpeg"
+        },
+        {
+            "id":"11",
+            "title":"Diet salad of buckwheat and vegetables",
+            "price":220,
+            "pic":"img-11.jpeg"
+        },
+        {
+            "id":"12",
+            "title":"Ozone fish with caviar",
+            "price":460,
+            "pic":"img-12.jpeg"
+        },
+        {
+            "id":"13",
+            "title":"Mixed tray of grilled wings and shoulders",
+            "price":360,
+            "pic":"img-13.png"
+        }
+
+    ]
+}

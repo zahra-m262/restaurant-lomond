@@ -1,0 +1,240 @@
+@import '../../main.scss';
+
+
+.container{
+    background: linear-gradient(rgba(0,0,0, 0.8),rgba(0,0,0 ,0.6)),url('./images/bg.jpeg') !important;
+    width: 100%;
+    height: 98vh;
+    background-size: cover;
+    position: relative;
+
+    @media (max-width:430px){
+       background: linear-gradient(rgba(0,0,0, 0.9),rgba(0,0,0 ,0.8)),url('./images/img2.jpeg') !important;
+       width: 100%;
+       height: 100vh;
+       background-size: cover;
+       position: relative;
+    }
+}
+
+
+
+.items-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.header-container{
+    position: absolute;
+    top: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 5rem;
+    color: $color-primary;
+    @include flexLayout;
+    width: 8rem;
+    height: 8rem;
+    border: 3px solid #d3ab55;
+    border-radius: 50%;
+
+    @media (max-width:1024px){
+        font-size: 4rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    @media (max-width:768px){
+        font-size: 3rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    @media (max-width:430px){
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    @media (max-width:376px){
+        font-size: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        margin-left: .25rem;
+    }
+}
+
+.main-name{
+    @include textStyles;
+    color: $color-secondary;
+    font-size: 4rem;
+    font-family: "nunito";
+    
+    @media (max-width:1024px){
+        font-size: 3rem;
+    }
+   
+    @media (max-width:768px){
+        font-size: 2.5rem;
+        // margin-bottom: 1rem;
+    }
+
+    @media (max-width:430px){
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+
+    @media (max-width:376px){
+        font-size: 1.49rem;
+        margin-right: .25rem;
+    }
+
+    @media (max-width:321px){
+        font-size: 1.25rem;
+    }
+
+
+}
+
+.sub-name{
+    font-family: 'josefin';
+    @include textStyles;
+    font-size: 1.25rem;
+    color: $color-secondary;
+    text-align: center;
+    margin-top: .75rem;
+
+    @media (max-width:1024px){
+        font-size: 1rem;
+    }
+
+    @media (max-width:430px){
+        font-size: .88rem;
+    }
+
+    @media (max-width:321px){
+        font-size: .70rem;
+    }
+}
+
+.header-banner{
+    @include centering(50%);
+    text-align: center;
+    margin-top: 5rem;
+
+    @media (max-width:1024px){
+        @include centering(40%);
+        margin-top: 8rem;
+    }
+
+    @media (max-width:430px){
+        @include centering(35%);
+        margin-top: 8rem;
+    }
+}
+
+.main-heading{
+    font-size: 7rem;
+    font-family: 'dancing';
+    font-weight: 300;
+    color: $color-primary;
+    margin: 2rem 0;
+
+    @media (max-width:1024px){
+        font-weight: 200;
+    }
+
+    @media (max-width:768px){
+        font-size: 6.5rem;
+    }
+
+    @media (max-width:430px){
+        font-size: 4.5rem;
+        font-weight: 500;
+
+    }
+
+    @media (max-width:321px){
+        font-size: 4rem;
+    }
+
+}
+
+.sub-heading{
+    font-size: 3rem;
+    font-family: 'josefin';
+    font-weight: 100;
+    color: $color-secondary;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    @media (max-width:1024px){
+        font-size: 2rem;
+        font-weight: 200;
+    }
+
+    @media (max-width:768px){
+        font-size: 1.7rem;
+    }
+
+    @media (max-width:430px){
+        font-size: 1.20rem;
+    }
+
+    @media (max-width:321px){
+        font-size: 1.08rem;
+    }
+}
+
+.main-btn{
+    width: 14rem;
+    height: 3.5rem;
+    font-family: 'josefin';
+    font-size: 1.10rem;
+    text-transform: uppercase;
+    letter-spacing: .20rem;
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    &:hover{
+        background-color: $color-primary;
+        color: $color-dark;
+    }
+
+    @media (max-width:1024px){
+        width: 12rem;
+        letter-spacing: .18rem;
+        font-size: 1rem;
+    }
+
+    @media (max-width:768px){
+        width: 11rem;
+        font-size: .99rem;
+        letter-spacing: .15rem;
+
+    }
+
+    @media (max-width:430px){
+        width: 9rem;
+        height: 3rem;
+        font-size: .80rem;
+    }
+
+    @media (max-width:321px){
+        width: 9rem;
+        height: 2.75rem;
+        font-size: .70rem;
+    }
+}
+

@@ -1,0 +1,172 @@
+@import '../../main.scss';
+
+
+
+.menu-bars{
+    // position: fixed;
+    position: absolute;
+    top: 3rem;
+    right: 12rem;
+    font-size: 4rem;
+    color: $color-primary;
+    // margin-left: 2rem;
+
+    @media (max-width:1024px){
+        right: 5rem;
+        font-size: 3.5rem;
+    }
+
+    @media (max-width:769px){
+        right: 3rem;
+        font-size: 2.5rem;
+    }
+
+    @media (max-width:426px){
+        font-size: 1.75rem;
+        right: 2rem;
+    }
+
+    @media (max-width:321px){
+        font-size: 1.5rem;
+        right: 1.5rem;
+    }
+}
+
+.nav-menu{
+    background-color: $color-dark;
+    width: 40rem;
+    height: 100vh;
+    @include flexLayout;
+    position: fixed;
+    top: 0;
+    right: -200%;
+    transition: all .8s;
+    z-index: 100000;
+
+    @media (max-width:769px){
+        width: 30rem;
+    }
+
+    @media (max-width:426px){
+        width: 20rem;
+    }
+
+    @media (max-width:321px){
+        width: 12rem;
+    }
+
+}
+
+.nav-menu.active{
+    right: 0;
+    transition: all .4s;
+
+}
+
+#close-icon{
+    font-size: 3rem;
+    position: absolute;
+    right: 23rem;
+
+    @media (max-width:1024px){
+        right: 30rem;
+        top: -2rem;
+        font-size: 3rem;
+    }
+
+    @media (max-width:769px){
+        right: 23rem;
+        top: -2rem;
+        font-size: 2.5rem;
+    }
+
+    @media (max-width:426px){
+        right: 14rem;
+        font-size: 2.25rem;
+    }
+
+    @media (max-width:321px){
+        right: 8rem;
+        font-size: 2rem;
+    }
+}
+
+.nav-text{
+    list-style: none;
+    @include flexLayout;
+    padding: 2rem 0;
+    height: 3rem;
+
+    @media (max-width:321px){
+        height: 2rem;
+    }
+}
+
+.nav-text a{
+    text-decoration: none;
+    color: $color-secondary;
+    width: 95%;
+    height: 100%;
+    font-size: 2.5rem;
+    font-family: 'josefin';
+    @include flexLayout;
+    text-align: center;
+    padding: 0 1rem;
+    // border-radius: 50px;
+    transition: all .4s;
+
+    &:hover{
+        letter-spacing: 4px;
+        color: $color-primary;
+    }
+
+    @media (max-width:769px){
+        width: 80%;
+        font-size: 2rem;
+
+    }
+
+    @media (max-width:426px){
+        font-size: 1.5rem;
+
+    }
+
+    @media (max-width:321px){
+        font-size: 1.25rem;
+    }
+}
+
+#hr{
+    width: 30rem;
+
+    @media (max-width:769px){
+        width: 20rem;
+    }
+
+    @media (max-width:426px){
+        width: 15rem;
+    }
+
+    @media (max-width:321px){
+        width:12rem;
+    }
+}
+
+span{
+    margin-right: 1rem;
+}
+
+// .nav-menu-items{
+//     width: 100%;
+// }
+
+.navbar-toggle{
+    background-color: $color-dark;
+    list-style: none;
+    @include flexLayout;
+    width: 100%;
+    align-items: center;
+}
+
+
+
